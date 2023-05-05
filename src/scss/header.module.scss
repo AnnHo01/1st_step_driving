@@ -1,0 +1,33 @@
+@import
+    'vars';
+
+.nav{
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+    left: 0;
+    color: #fff;
+    z-index: 999;
+
+    .logo{
+        width: 120px;
+        height: 35px;
+        display: inline-block;
+        position: relative;
+    }
+
+    a{
+        color: #fff;
+        font-weight: 500;
+        font-size: $p-mb;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav{
+        .logo{
+            width: 180px;
+            height: 50px;
+        }
+    }
+}

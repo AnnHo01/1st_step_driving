@@ -1,0 +1,14 @@
+.navbar .navbar-collapse{
+    flex-grow: unset;
+}
+
+.navbar-toggler{
+    outline: none !important;
+    border: none !important;
+
+    &:active, &:focus{
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+}
