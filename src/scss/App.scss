@@ -26,10 +26,16 @@ h2{
     font-size: $h2-mb;
     color: $main-color;
     font-weight: 600 !important;
+    margin-bottom: 15px;
 }
 
 h3{
     font-size: $h3-mb;
+}
+
+h6{
+    color: $main-color;
+    font-weight: 600 !important;
 }
 
 .bg-blue{
@@ -88,6 +94,10 @@ section{
     height: 30px;
     background-color: $main-color;
 
+}
+
+.calendly-inline-widget{
+    height: 780px !important;
 }
 
 @media screen and (min-width: 992px) {

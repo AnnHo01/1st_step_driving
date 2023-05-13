@@ -8,6 +8,7 @@
     left: 0;
     color: #fff;
     z-index: 999;
+    transition: all 0.3s ease-out;
 
     .logo{
         width: 120px;
@@ -21,7 +22,15 @@
         font-weight: 500;
         font-size: $p-mb;
     }
+
+    &.scrolled{
+        position: fixed !important;
+        top: 0;
+        background-color: $main-color;
+        transition: all 0.3s ease-out;
+    }
 }
+
 
 @media screen and (min-width: 992px) {
     .nav{
