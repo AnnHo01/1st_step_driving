@@ -8,7 +8,7 @@
     left: 0;
     color: #fff;
     z-index: 999;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s linear;
 
     .logo{
         width: 120px;
@@ -27,7 +27,15 @@
         position: fixed !important;
         top: 0;
         background-color: $main-color;
-        transition: all 0.3s ease-out;
+        transition: all 0.3s linear;
+
+        a{
+            &:hover, &:focus{
+                background-color: #fff;
+                color: $main-color !important;
+                transition: all 0.3s linear;
+            }
+        }
     }
 }
 

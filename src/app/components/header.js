@@ -56,45 +56,19 @@ function Header(props) {
 
     return (
         <div id='home'>
-            {/* <nav className={`${styles.nav} navbar navbar-expand-lg`}>
-                <div className="container">
-                    <a className={`${styles.logo}`} href="/">
-                        <Image src="/1st-step-logo-wht.svg" fill={true} style={{objectFit: 'contain'}} alt="Logo" />
-                    </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <FontAwesomeIcon icon={faBars} style={{color: '#fff'}} />
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">About Us</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">Services</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </nav> */}
             <Navbar className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`} expand="lg" collapseOnSelect='true' >
                 <Container className='py-3 '>
-                    <a className={`${styles.logo}`} href="/">
+                    <Link className={`${styles.logo}`} href="/">
                         <Image src="/1st-step-logo-wht.svg" fill={true} style={{objectFit: 'contain'}} alt="Logo" />
-                    </a>
+                    </Link>
                     <Navbar.Toggle>
                         <FontAwesomeIcon icon={faBars} style={{color: '#fff'}} />
                     </Navbar.Toggle>
                     <Navbar.Collapse className="justify-content-end d-none d-lg-block">
                         <Nav className="me-auto" >
-                            <Nav.Link className={`${props.page == 'contact' ? '' : 'scroll-to'}`} href={`${props.page == 'contact' ? '/#' : ''}home`}>Home</Nav.Link>
-                            <Nav.Link className={`${props.page == 'contact' ? '' : 'scroll-to'}`} href={`${props.page == 'contact' ? '/#' : ''}features`}>About Us</Nav.Link>
-                            <Nav.Link className={`${props.page == 'contact' ? '' : 'scroll-to'}`} href={`${props.page == 'contact' ? '/#' : ''}pricing`}>Services</Nav.Link>
+                            <Nav.Link className={`${props.page == 'contact' ? '' : 'scroll-to'} me-3`} href={`${props.page == 'contact' ? '/#' : ''}home`}>Home</Nav.Link>
+                            <Nav.Link className={`${props.page == 'contact' ? '' : 'scroll-to'} me-3`} href={`${props.page == 'contact' ? '/#' : ''}features`}>About Us</Nav.Link>
+                            <Nav.Link className={`${props.page == 'contact' ? '' : 'scroll-to'} me-3`} href={`${props.page == 'contact' ? '/#' : ''}pricing`}>Services</Nav.Link>
                             <Nav.Link href="contact">Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
