@@ -4,7 +4,6 @@
 import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
 import Link from 'next/link';
-import WOW from 'wowjs';
 import { useEffect } from 'react';
 // Import components
 import Header from './components/header'
@@ -17,7 +16,8 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import styles from '../scss/main.module.scss'
 
 export default function Home() {
-  useEffect(() => {
+  useEffect(async() => {
+    const WOW = (await import('wowjs')).default;
     const wow = new WOW.WOW();
     wow.init();
   })
@@ -49,7 +49,7 @@ export default function Home() {
             <Row className='d-flex justify-content-center'>
               <Col className='text-center wow fadeInDown' lg={8}>
                 <h2 className='mb-3 mb-lg-4'>Why Choose Us?</h2>
-                <p>At 1st Step Driving School, we understand that choosing a driving school is an important decision. That's why we've created a learning environment that is safe, supportive, and fun. Here are just a few reasons why you should choose us for your driving education:</p>
+                <p>At 1st Step Driving School, we understand that choosing a driving school is an important decision. That&apos;s why we&apos;ve created a learning environment that is safe, supportive, and fun. Here are just a few reasons why you should choose us for your driving education:</p>
               </Col>
             </Row>
           </Container>
@@ -101,7 +101,7 @@ export default function Home() {
                       <div className='line-style me-3'></div>
                       <h2>Flexible Scheduling</h2>
                     </div>
-                    <p>We understand that everyone's schedule is different, which is why we offer flexible scheduling options. We'll work with you to find a lesson time that suits your busy lifestyle, whether that's in the morning, afternoon, or evening.</p>
+                    <p>We understand that everyone&apos;s schedule is different, which is why we offer flexible scheduling options. We&apos;ll work with you to find a lesson time that suits your busy lifestyle, whether that&apos;s in the morning, afternoon, or evening.</p>
                   </Col>
                 </Row>
                 
@@ -209,7 +209,7 @@ export default function Home() {
                 <h2 className='mb-3 mb-lg-4'>What Students Think About Us?</h2>
                 <div>
                   <FontAwesomeIcon icon={faQuoteLeft} style={{float: 'left'}} className={`${styles.quote}`} />
-                  <p className='px-3 px-lg-5' style={{paddingTop: '60px'}}>I had Bobby as my driving teacher. He was nice, patient, and understanding. I didn't pass the first time, but passed the second time. I took a lot of lessons, but understood that passing this road test is mostly based on luck. Bobby helped me gain driving experience from not knowing how to drive at all, to being comfortable and confident in my driving abilities, thank you!<br/><span className='fw-semibold'>Emily .K</span></p>
+                  <p className='px-3 px-lg-5' style={{paddingTop: '60px'}}>I had Bobby as my driving teacher. He was nice, patient, and understanding. I didn&apos;t pass the first time, but passed the second time. I took a lot of lessons, but understood that passing this road test is mostly based on luck. Bobby helped me gain driving experience from not knowing how to drive at all, to being comfortable and confident in my driving abilities, thank you!<br/><span className='fw-semibold'>Emily .K</span></p>
                   <FontAwesomeIcon icon={faQuoteRight} style={{float: 'right'}} className={`${styles.quote}`} />
                 </div>
               </Col>

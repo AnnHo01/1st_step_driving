@@ -20,20 +20,22 @@ import styles from '../../scss/header.module.scss'
 
 function Header(props) {
     const [scrolled, setScrolled] = useState(false);
-    const handleScroll = () => {
-        const offset = window.scrollY;
-
-        if (offset > 200) {
-            setScrolled(true);
-        }
-        else {
-            setScrolled(false);
-        }
-    }
 
     
 
     useEffect(() => {
+        
+        const handleScroll = () => {
+            const offset = window.scrollY;
+
+            if (offset > 200) {
+                setScrolled(true);
+            }
+            else {
+                setScrolled(false);
+            }
+        }
+
         const navLink = document.getElementsByClassName('scroll-to');
         const scrollToEle = (id) => {
             var position = document.getElementById(id).getBoundingClientRect().top;
