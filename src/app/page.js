@@ -20,12 +20,17 @@ export default function Home() {
     const WOW = (await import('wowjs')).default;
     const wow = new WOW.WOW();
     wow.init();
-  })
+
+    return false;
+  }, [])
   return (
     <>
       <Header />
       
       <header className='bg-img position-relative wow slideInDown' style={{backgroundImage: 'url("/cover-1.jpg")'}}>
+        <video muted loop autoPlay style={{width: '100%', height: '100%', objectFit: 'cover'}}>
+          <source src="/cover.mp4" type="video/mp4" />
+        </video>
         <div className='overlay dark d-flex justify-content-center align-items-center'>
           <Container>
               <Row>
@@ -49,7 +54,7 @@ export default function Home() {
             <Row className='d-flex justify-content-center'>
               <Col className='text-center wow fadeInDown' lg={8}>
                 <h2 className='mb-3 mb-lg-4'>Why Choose Us?</h2>
-                <p>At 1st Step Driving School, we understand that choosing a driving school is an important decision. That&apos;s why we&apos;ve created a learning environment that is safe, supportive, and fun. Here are just a few reasons why you should choose us for your driving education:</p>
+                <p>With over 30 years of driving experience, I understand how crucial it is to choose the right driving school for a successful and safe driving future. That&apos;s why at 1st Step Driving School, we have created an exceptional learning environment that prioritizes safety, support, and enjoyment. Here are just some reasons why our driving education program stands out as an excellent choice for you.</p>
               </Col>
             </Row>
           </Container>
@@ -69,7 +74,7 @@ export default function Home() {
                       <div className='line-style me-3'></div>
                       <h2>Experienced Instructors</h2>
                     </div>
-                    <p>All of our instructors are highly experienced and knowledgeable about the latest road rules and regulations. They are patient, friendly, and dedicated to helping you become a safe and confident driver on the road.</p>
+                    <p>Our patient, friendly instructors at 1st Step Driving School have over 30 years of experience. They&apos;re well-versed in the latest road rules and regulations, dedicated to helping you gain the skills needed to become a safe and confident driver.</p>
                   </Col>
                 </Row>
                 
@@ -135,34 +140,37 @@ export default function Home() {
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>2 Hour Lesson</h3>
-                      <p>Includes<br />
+                      <p className={`${styles.price}`}>$130</p>
+                      {/* <p>Includes<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       Use of vehicle with break assistance<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       Parallel Parking Lesson
-                      </p>
+                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>1.5 Hour Lesson</h3>
-                      <p>Includes<br />
+                      <p className={`${styles.price}`}>$90</p>
+                      {/* <p>Includes<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       Use of vehicle with break assistance<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       Parallel Parking Lesson
-                      </p>
+                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>1 Hour Lesson</h3>
-                      <p>Includes<br />
+                      <p className={`${styles.price}`}>$65</p>
+                      {/* <p>Includes<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       Use of vehicle with break assistance<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       Parallel Parking Lesson
-                      </p>
+                      </p> */}
                     </div>
                   </Col>
                 </Row>
@@ -170,21 +178,25 @@ export default function Home() {
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>Road Test Package</h3>
-                      <p>Includes<br />
+                      <p className={`${styles.price}`}>$130</p>
+                      <p>*Inlcudes an hour practice before the road test and the use of vehicle for the road test.</p>
+                      {/* <p>Includes<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       An hour practice before the road test<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       Use of vehicle for the road test
-                      </p>
+                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>5 Lessons Package</h3>
-                      <p>Includes<br />
+                      <p className={`${styles.price}`}>$450</p>
+                      <p>*Inlcudes 5 lessons, each 1.5 hours long.</p>
+                      {/* <p>Includes<br />
                       <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
                       5 lessons x 1.5 hours long
-                      </p>
+                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={8} className='text-start py-2 py-lg-0'>

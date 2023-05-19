@@ -36,12 +36,25 @@
     margin-bottom: -30px;
 }
 
+.price{
+    font-size: $h1-mb;
+    font-family: $heading-font;
+    font-weight: 600;
+    text-align: center !important;
+}
+
 .quote{
     color: $main-blue;
     font-size: 39px;
 }
 
 @media screen and (min-width: 992px) {
+    .course{
+        p{
+            font-size: $p-mb;
+        }
+    }
+
     .stop_icn{
         width: 60px;
         height: 60px;
@@ -52,6 +65,10 @@
         width: 76px;
         height: 80px;
         margin-bottom: -80px;
+    }
+
+    .price{
+        font-size: $h1-des !important;
     }
  
     .quote{
