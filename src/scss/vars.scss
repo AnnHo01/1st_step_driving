@@ -1,5 +1,5 @@
-$base-font: 'Roboto';
-$heading-font: 'Playfair Display';
+$base-font: var(--font-roboto);
+$heading-font: var(--font-playfair-display);
 
 $p-mb: 16px;
 $p-des: 18px;

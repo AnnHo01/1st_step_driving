@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: $base-font;
     font-size: $p-mb;
     color: #000;
 }
@@ -36,6 +36,10 @@ h3{
 h6{
     color: $main-color;
     font-weight: 600 !important;
+}
+
+p{
+    font-family: $base-font;
 }
 
 .bg-blue{

@@ -1,9 +1,22 @@
 import '../scss/App.scss'
 import '../scss/custom.bootstrap.scss'
-import { Inter } from 'next/font/google'
+import Script from 'next/script'
+import { Roboto, Playfair_Display } from 'next/font/google'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  display: 'swap',
+  weight: ['100', '300', '400', '500', '700', '900'],
+})
+
+const playFair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair-display',
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800', '900'],
+})
 
 export const metadata = {
   title: '1st Step Driving School',
@@ -32,11 +45,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* <link href="https://fonts.googleapis.com/css?family=Playfair%20Display:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"></link> */}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"></link>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11180674865" strategy="beforeInteractive"></Script>
+        <Script id="google-ads-tag" strategy="beforeInteractive" dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-11180674865');`,
+        }} />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${roboto.variable} ${playFair.variable}`}>{children}</body>
     </html>
   )
 }
