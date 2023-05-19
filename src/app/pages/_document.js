@@ -11,6 +11,7 @@ class MyDocument extends Document {
         <link href="https://fonts.googleapis.com/css?family=Playfair%20Display:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" />
+        </Head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11180674865" strategy="afterInteractive"></Script>
         <Script id="google-ads-tag" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
@@ -19,7 +20,6 @@ class MyDocument extends Document {
 
           gtag('config', 'AW-11180674865');`}
         </Script>
-        </Head>
         <body>
           <Main />
           <NextScript />
