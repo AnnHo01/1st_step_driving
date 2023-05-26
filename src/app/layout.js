@@ -54,6 +54,14 @@ export default function RootLayout({ children }) {
 
           gtag('config', 'AW-11180674865');`,
         }} />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-T41SDEZ70R" strategy="beforeInteractive"></Script>
+        <Script id="google-ads-tag" strategy="beforeInteractive" dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-T41SDEZ70R');`,
+        }} />
       </head>
       <body className={`${roboto.variable} ${playFair.variable}`}>{children}</body>
     </html>
