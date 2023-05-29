@@ -16,23 +16,28 @@ import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import styles from '../scss/main.module.scss'
 
 export default function Home() {
-  useEffect(async() => {
-    const WOW = (await import('wowjs')).default;
-    const wow = new WOW.WOW();
-    wow.init();
+  useEffect(() => {
+    
+    async function myEffect(){
+      const WOW = (await import('wowjs')).default;
+      const wow = new WOW.WOW();
+      wow.init();
+  
+      return false;
+    }
 
-    return false;
+    myEffect();
   }, [])
   return (
     <>
       <Header />
       
-      <header className='bg-img position-relative wow slideInDown' style={{backgroundImage: 'url("/cover-1.jpg")'}}>
+      <header className='bg-img position-relative' style={{backgroundImage: 'url("/cover-1.jpg")'}}>
         <video muted loop autoPlay style={{width: '100%', height: '100%', objectFit: 'cover'}}>
           <source src="/cover.mp4" type="video/mp4" />
         </video>
         <div className='overlay dark d-flex justify-content-center align-items-center'>
-          <Container>
+          <Container className='wow slideInDown'>
               <Row>
                   <Col className='text-center'>
                       <h1 className='text-center'>Learn to Drive <br className='d-block d-sm-none' />with Confidence</h1>
@@ -141,36 +146,18 @@ export default function Home() {
                     <div className={`${styles.course}`}>
                       <h3>2 Hour Lesson</h3>
                       <p className={`${styles.price}`}>$130</p>
-                      {/* <p>Includes<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      Use of vehicle with break assistance<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      Parallel Parking Lesson
-                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>1.5 Hour Lesson</h3>
                       <p className={`${styles.price}`}>$90</p>
-                      {/* <p>Includes<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      Use of vehicle with break assistance<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      Parallel Parking Lesson
-                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>1 Hour Lesson</h3>
                       <p className={`${styles.price}`}>$65</p>
-                      {/* <p>Includes<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      Use of vehicle with break assistance<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      Parallel Parking Lesson
-                      </p> */}
                     </div>
                   </Col>
                 </Row>
@@ -180,12 +167,6 @@ export default function Home() {
                       <h3>Road Test Package</h3>
                       <p className={`${styles.price}`}>$130</p>
                       <p>*Inlcudes an hour practice before the road test and the use of vehicle for the road test.</p>
-                      {/* <p>Includes<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      An hour practice before the road test<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      Use of vehicle for the road test
-                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
@@ -193,10 +174,6 @@ export default function Home() {
                       <h3>5 Lessons Package</h3>
                       <p className={`${styles.price}`}>$450</p>
                       <p>*Inlcudes 5 lessons, each 1.5 hours long.</p>
-                      {/* <p>Includes<br />
-                      <FontAwesomeIcon icon={faCircle} style={{fontSize: '9px', marginBottom: '2px', marginRight: '15px'}}/>
-                      5 lessons x 1.5 hours long
-                      </p> */}
                     </div>
                   </Col>
                   <Col xs={12} lg={8} className='text-start py-2 py-lg-0'>

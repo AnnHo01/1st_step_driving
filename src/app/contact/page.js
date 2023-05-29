@@ -52,11 +52,11 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section id="more">
+        <section id="more" className='pt-0'>
             <Container>
                 <Row>
                     <Col>
-                        <InlineWidget url="https://calendly.com/1ststepdrivingschool" style={{height: '100%'}}/>
+                        <InlineWidget url="https://calendly.com/1ststepdrivingschool/1-5-hour-lesson" style={{height: '100%'}}/>
                     </Col>
                 </Row>
                 <Row>
@@ -66,8 +66,24 @@ export default function Home() {
                 </Row>
             </Container>
         </section>
+        <section className='bg-blue text-center'>
+            <Container>
+                <Row className='d-flex justify-content-center'>
+                    <Col xs={12} lg={8} className='mb-3 wow fadeInDown'>
+                        <h2 className='mb-3 mb-lg-4'>Contact Now</h2>
+                        <p className='mb-4'>If you have any questions or would like to schedule a session directly with our instructor, don&apos;t hesitate to reach out! We&apos;re always happy to assist you.</p>
+                        <Link href="tel:2042918704" className='text-uppercase call_btn wow heartBeat' data-wow-delay='2s'>
+                            <div>
+                            <span>Call Now</span>
+                            <span>Call Now</span>
+                            </div>
+                        </Link>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
       </main>
-      <Footer />
+      <Footer style={{marginTop: '-40px'}}/>
     </>
   )
 }
