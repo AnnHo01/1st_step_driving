@@ -151,13 +151,13 @@ export default function Home() {
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>1.5 Hour Lesson</h3>
-                      <p className={`${styles.price}`}>$90</p>
+                      <p className={`${styles.price}`}>$100</p>
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>1 Hour Lesson</h3>
-                      <p className={`${styles.price}`}>$65</p>
+                      <p className={`${styles.price}`}>$70</p>
                     </div>
                   </Col>
                 </Row>
@@ -165,14 +165,14 @@ export default function Home() {
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>Road Test Package</h3>
-                      <p className={`${styles.price}`}>$130</p>
+                      <p className={`${styles.price}`}>$140</p>
                       <p>*Inlcudes an hour practice before the road test and the use of vehicle for the road test.</p>
                     </div>
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>5 Lessons Package</h3>
-                      <p className={`${styles.price}`}>$450</p>
+                      <p className={`${styles.price}`}>$490</p>
                       <p>*Inlcudes 5 lessons, each 1.5 hours long.</p>
                     </div>
                   </Col>
