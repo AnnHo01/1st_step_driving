@@ -171,7 +171,14 @@ export default function Home() {
                   </Col>
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
-                      <h3>5 Lessons Package</h3>
+                      <h3>5 Lessons Package I</h3>
+                      <p className={`${styles.price}`}>$340</p>
+                      <p>*Inlcudes 5 lessons, each 1 hour long.</p>
+                    </div>
+                  </Col>
+                  <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
+                    <div className={`${styles.course}`}>
+                      <h3>5 Lessons Package II</h3>
                       <p className={`${styles.price}`}>$490</p>
                       <p>*Inlcudes 5 lessons, each 1.5 hours long.</p>
                     </div>
