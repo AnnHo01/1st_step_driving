@@ -157,7 +157,7 @@ export default function Home() {
                   <Col xs={12} lg={4} className='mb-3 g-0 g-lg-3'>
                     <div className={`${styles.course}`}>
                       <h3>1 Hour Lesson</h3>
-                      <p className={`${styles.price}`}>$70</p>
+                      <p className={`${styles.price}`}>$65</p>
                     </div>
                   </Col>
                 </Row>
