@@ -137,6 +137,7 @@ export default function Home() {
                 </div>
                 <h2 className='mb-2 mb-lg-3'>Comprehensive Course Options</h2>
                 <p>We offer a range of Comprehensive course options to suit all levels of driving experience.</p>
+  <p>Serving the South and Westside areas of St. Boniface, including downtown. For locations outside of these areas, appointments must be arranged for meetings at Polo Park.</p>
               </Col>
             </Row>
             <Row>
