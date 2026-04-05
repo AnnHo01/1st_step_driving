@@ -249,7 +249,7 @@ export default function Home() {
             <Row className='d-flex justify-content-center'>
               <Col xs={12} lg={8} className='mb-3 wow fadeInDown'>
                 <h2 className='text-uppercase mb-3 mb-lg-4'>Join 1,000+ Successful Drivers in Winnipeg.</h2>
-                <p className='mb-4'><strong>Ready to Pass Your MPI Road Test?</strong> Get expert coaching on parallel parking and city driving from Winnipeg's most experienced instructors. Your license is just one step away.</p>
+                <p className='mb-4'><strong>Ready to Pass Your MPI Road Test?</strong> Get expert coaching on parallel parking and city driving from Winnipeg&apos;s most experienced instructors. Your license is just one step away.</p>
                 <Link href="/contact" className='text-uppercase call_btn wow heartBeat' data-wow-delay='2s'>
                     <div>
                       <span>Book Now</span>
