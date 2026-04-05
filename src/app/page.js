@@ -69,7 +69,7 @@ export default function Home() {
             <Row>
               <Col lg={{span: 6, order: 2}} xs={12} className='gx-0 gx-lg-4 mb-4 mb-lg-0'>
                 <div className='position-relative img-cont'>
-                  <Image src="/success-driver.jpg" alt="Successful driver" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/image/success-driver.jpg" alt="Successful driver" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='wow fadeInLeft'>
@@ -101,7 +101,7 @@ export default function Home() {
             <Row>
               <Col lg={6} xs={12} className='gx-0 gx-lg-4 mb-4 mb-4 mb-lg-0'>
                 <div className='position-relative img-cont'>
-                  <Image src="/working-student.jpg" alt="Hardworking Student" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/image/working-student.jpg" alt="Hardworking Student" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='wow fadeInRight'>
@@ -218,27 +218,27 @@ export default function Home() {
             <Row>
               <Col className='py-3 col-md-15 col-12 d-flex align-items-center'>
                 <div className='position-relative gal-img gal-odd wow fadeInDown' data-wow-duration="0.5s">
-                  <Image src="/gal-1.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/image/gal-1.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12'>
                 <div className='position-relative gal-img wow fadeInUp' data-wow-duration="0.5s" >
-                  <Image src="/gal-2.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/image/gal-2.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12 d-flex align-items-center'>
                 <div className='position-relative gal-img gal-odd wow fadeInDown' data-wow-duration="0.5s">
-                  <Image src="/gal-3.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/image/gal-3.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12'>
                 <div className='position-relative gal-img wow fadeInUp' data-wow-duration="0.5s">
-                  <Image src="/gal-4.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/image/gal-4.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12 d-flex align-items-center' >
                 <div className='position-relative gal-img gal-odd wow fadeInDown' data-wow-duration="0.5s">
-                  <Image src="/gal-5.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/image/gal-5.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
             </Row>
