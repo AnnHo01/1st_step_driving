@@ -19,25 +19,33 @@ const playFair = Playfair_Display({
 })
 
 export const metadata = {
-  title: '1st Step Driving School',
-  description: '1st Step Driving School offers comprehensive and affordable driving lessons with 30 years experienced instructors. Learn to drive safely and confidently with us. Book your lesson today online or call (204) 291 - 8704.',
-  authors: [{name: 'Ann Ho', url: 'https://www.linkedin.com/in/ann-ho-1304/'}],
-  keywords: ['driving', 'driving school', 'winnipeg driving', 'winnipeg school', 'winnipeg driving school', 'first time driver', 'driving school in Winnipeg', '1st step driving school', 'bobby\'s driving school'],
+  title: '1st Step Driving School Winnipeg | MPI Road Test Prep | 30+ Yrs Exp',
+  description: "Master driving with Winnipeg's trusted 1st Step Driving School. 30+ years experience. Lessons in English, Punjabi & Hindi. Affordable MPI road test prep & parallel parking. Book your lesson online or call (204) 291-8704!",
+  authors: [{name: 'Ann Ho', url: 'https://annsdigital.com/'}],
+  keywords: [
+    '1st step driving school', 
+    'Winnipeg driving school', 
+    'Punjabi driving instructor Winnipeg', 
+    'Hindi driving lessons', 
+    'MPI road test preparation Winnipeg', 
+    'Class 5 driving lessons Winnipeg', 
+    'affordable driving school Winnipeg',
+    'parallel parking lessons Winnipeg'
+  ],
   openGraph: {
-    title: '1st Step Driving School',
-    description: '1st Step Driving School offers comprehensive and affordable driving lessons with 30 years experienced instructors. Learn to drive safely and confidently with us. Book your lesson today online or call (204) 291 - 8704.',
+    title: '1st Step Driving School Winnipeg | Punjabi & Hindi Speaking Instructor',
+    description: 'Affordable, professional driving lessons in Winnipeg with 30+ years of experience. Specializing in MPI road test success. Lessons available in English, Punjabi, and Hindi.',
     url: 'https://1ststepdrivingschool.com/',
     siteName: '1st Step Driving School',
     images: [
       {
         url: 'https://1ststepdrivingschool.com/_ipx/w_2048,q_75/%2Fgal-2.jpg?url=%2Fgal-2.jpg&w=2048&q=75',
-        width: 800,
-        height: 600,
-        alt: '1st Step Driving School Training Car',
+        width: 1200,
+        height: 630,
+        alt: '1st Step Driving School Winnipeg Training Car',
       }
     ],
     type: 'website',
-    authors: ['Ann Ho']
   }
 }
 

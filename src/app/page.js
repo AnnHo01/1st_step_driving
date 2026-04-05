@@ -218,27 +218,27 @@ export default function Home() {
             <Row>
               <Col className='py-3 col-md-15 col-12 d-flex align-items-center'>
                 <div className='position-relative gal-img gal-odd wow fadeInDown' data-wow-duration="0.5s">
-                  <Image src="/gal-1.jpg" alt="1st Step Driving School Vehicle" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/gal-1.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12'>
                 <div className='position-relative gal-img wow fadeInUp' data-wow-duration="0.5s" >
-                  <Image src="/gal-2.jpg" alt="1st Step Driving School Vehicle" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/gal-2.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12 d-flex align-items-center'>
                 <div className='position-relative gal-img gal-odd wow fadeInDown' data-wow-duration="0.5s">
-                  <Image src="/gal-3.jpg" alt="1st Step Driving School Vehicle" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/gal-3.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12'>
                 <div className='position-relative gal-img wow fadeInUp' data-wow-duration="0.5s">
-                  <Image src="/gal-4.jpg" alt="1st Step Driving School Vehicle" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/gal-4.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
               <Col className='py-3 col-md-15 col-12 d-flex align-items-center' >
                 <div className='position-relative gal-img gal-odd wow fadeInDown' data-wow-duration="0.5s">
-                  <Image src="/gal-5.jpg" alt="1st Step Driving School Vehicle" fill={true} style={{objectFit: 'cover'}} />
+                  <Image src="/gal-5.jpg" alt="1st Step Driving School Winnipeg Training Car" fill={true} style={{objectFit: 'cover'}} />
                 </div>
               </Col>
             </Row>
@@ -248,8 +248,8 @@ export default function Home() {
           <Container>
             <Row className='d-flex justify-content-center'>
               <Col xs={12} lg={8} className='mb-3 wow fadeInDown'>
-                <h2 className='text-uppercase mb-3 mb-lg-4'>Book Your Appointment Today</h2>
-                <p className='mb-4'>Ready to hit the road? Book your driving lesson today and take the first step towards becoming a confident and safe driver!</p>
+                <h2 className='text-uppercase mb-3 mb-lg-4'>Join 1,000+ Successful Drivers in Winnipeg.</h2>
+                <p className='mb-4'><strong>Ready to Pass Your MPI Road Test?</strong> Get expert coaching on parallel parking and city driving from Winnipeg's most experienced instructors. Your license is just one step away.</p>
                 <Link href="/contact" className='text-uppercase call_btn wow heartBeat' data-wow-delay='2s'>
                     <div>
                       <span>Book Now</span>
