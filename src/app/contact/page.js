@@ -4,7 +4,7 @@
 import Image from 'next/image'
 import { Col, Container, Row } from 'react-bootstrap'
 import Link from 'next/link';
-import { InlineWidget } from 'react-calendly';
+import { useRouter } from 'next/navigation';
 // Import components
 import Header from '../components/header'
 import Footer from '../components/footer';
@@ -14,6 +14,8 @@ import { useEffect } from 'react';
 import styles from '../../scss/main.module.scss';
 
 export default function Home() {
+    const router = useRouter();
+
     async function handleSubmit(e){
       e.preventDefault();
       const form = e.target;
