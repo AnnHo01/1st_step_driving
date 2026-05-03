@@ -62,7 +62,7 @@ function Footer(props) {
                                         <li>
                                             <FontAwesomeIcon icon={faEnvelope} style={{color: '#0672A0', float: 'left', fontSize: '30px', marginRight: '15px'}}/>
                                             <p>Email Us<br/>
-                                            <a href="mailto:%69am%62o%62byka%75sh%61l@%67mail.%63o%6D" className='fw-semibold'>iambobbykaushal@gmail.com</a></p>
+                                            <a href="mailto:%31st%73te%70d%72iv%69ng%31@g%6Dai%6Cl.%63om" className='fw-semibold'>1ststepdriving1@gmail.com</a></p>
                                         </li>
                                     </ul>
                                 </Col>
