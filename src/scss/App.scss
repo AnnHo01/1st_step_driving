@@ -90,6 +90,8 @@ p{
     transition-delay: .6s;
     overflow: hidden;
     display: block;
+    border: none;
+    box-shadow: none;
 
     &::before{
         content: '';
@@ -117,7 +119,7 @@ p{
         transition: all .6s ease;
     }
 
-    div{
+    & > div{
         position: relative;
         top: 10px;
         width: 100%;
@@ -172,6 +174,10 @@ p{
             }
         }
     }
+}
+
+button.call_btn{
+    display: flex;
 }
 
 section{

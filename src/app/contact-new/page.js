@@ -11,22 +11,8 @@ import Footer from '../components/footer';
 import { useEffect } from 'react';
 // Import media
 // Import styles
-import styles from '../../scss/main.module.scss';
 
 export default function Home() {
-    async function handleSubmit(e){
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
-      const response = await fetch('/__forms.html', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      });
-      if (response.ok) {
-        router.push('/thanks');
-      }
-    }
 
     useEffect(() => {
         const btn = document.getElementById('more_btn');
@@ -66,48 +52,11 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section id="more">
+        <section id="more" className='pt-0'>
             <Container>
-              <Row className='d-flex justify-content-center'>
-                <Col className="text-center" xs={12} lg={8}>
-                  <h2>Ready to Get Started?</h2>
-                  <p className="pt-3">Fill out the form below to secure your spot. Whether you have a specific question or are ready to get started, we&apos;ll get back to you within 24 hours to finalize the details.</p>
-                </Col>
-              </Row>
                 <Row>
                     <Col>
-                      <form className={`${styles.exp_form}`} name="contact_form" method="POST" onSubmit={handleSubmit} action='/thanks' netlify>
-                        <input type="hidden" name="form-name" value="contact_form" />
-                        <Container className="p-5">
-                          <Row className='d-flex justify-content-center' style={{gap: '40px'}}>
-                            <Col xs={12} lg={8}>
-                              <label className="fw-bold" htmlFor='fname'>Name*</label>
-                              <input type='text' id='fname' name='fname' placeholder='Type Your Name' />
-                            </Col>
-                            <Col xs={12} lg={8}>
-                              <label className="fw-bold" htmlFor='email'>Email*</label>
-                              <input type='email' id='email' name='email' placeholder='Type Your Email' required />
-                            </Col>
-                            <Col xs={12} lg={8}>
-                              <label className="fw-bold" htmlFor='pnum'>Phone Number</label>
-                              <input type='number' id='pnum' name='pnum' placeholder='Type Your Phone' />
-                            </Col>
-                            <Col xs={12} lg={8}>
-                              <label className="fw-bold" htmlFor='fname'>Leave us a note</label>
-                              <textarea id='experience' name='experience' rows={4} placeholder='Ask us anything'></textarea>
-                            </Col>
-                            <Col xs={12} lg={8} className='d-flex justify-content-center'>
-                              <button type="submit" className='text-uppercase call_btn'>
-                                <div>
-                                <span>Connect Now</span>
-                                <span>Connect Now</span>
-
-                                </div>
-                            </button>
-                            </Col>
-                          </Row>
-                        </Container>
-                      </form>
+                        <InlineWidget url="https://calendly.com/1ststepdrivingschool/1-5-hour-lesson" style={{height: '100%'}}/>
                     </Col>
                 </Row>
                 <Row>
